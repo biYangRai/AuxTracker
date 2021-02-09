@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //background-color: rgb(51, 54, 54);
+}
+h1,
+h2,
+h3 {
+  color: rgb(121, 116, 116);
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+@import "./button1";
