@@ -1,0 +1,113 @@
+.drop-options {
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .logo {
+    background-image: url("../images/Alogo.png");
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  h1 {
+    font-size: 1rem;
+    color: #615d5d;
+    padding-right: 60rem;
+    padding-left: 0rem;
+  }
+}
+
+//remove the default stlye from HTML's select tag
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+select {
+  //A reset of style, including removing the default dropdown arrow
+  appearance: none;
+  //Additional resets for further consistency
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+select::-ms-expand {
+  display: none;
+}
+:root {
+  --select-border: rgb(233, 227, 227);
+  --select-focus: rgb(144, 144, 212);
+  --select-arrow: var(--select-border);
+}
+
+//Give our own style
+.drop-select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  select {
+    width: 100%;
+    min-width: 10ch;
+    max-width: 25ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.15em 0.2em;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: rgb(207, 199, 199);
+    background-image: linear-gradient(to top, #cfc0c0, rgb(247, 242, 242) 33%);
+    display: grid;
+  }
+  select::after {
+    content: "";
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--select-arrow);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  }
+}
+
+//styling the aux color div
+.classGrey {
+  // background: rgb(100, 100, 100);
+  background: linear-gradient(to right top, #070707, rgb(102, 100, 100) 50%);
+  border-radius: 50%;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin-right: 0.2rem;
+}
+.classGreen {
+  background: linear-gradient(to right top, #53b304, rgb(124, 255, 1) 50%);
+  border-radius: 50%;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin-right: 0.2rem;
+}
+.classRed {
+  background: linear-gradient(to right top, #e00606, rgb(255, 3, 3) 50%);
+  border-radius: 50%;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin-right: 0.2rem;
+}
+.classYellow {
+  background: linear-gradient(to right top, #af9608, rgb(255, 238, 0) 50%);
+  border-radius: 50%;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin-right: 0.2rem;
+}
